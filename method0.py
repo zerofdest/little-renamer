@@ -55,8 +55,8 @@ def main():
             # 执行重命名
             for old_name, new_name in rename_pairs:
                 os.rename(os.path.join(path, old_name), os.path.join(path, new_name))
-                print("重命名完成")
-                return
+            print("重命名完成")
+            return
         elif confirm.isdigit():
             k = int(confirm) - 1
             if 0 <= k < len(rename_pairs):
